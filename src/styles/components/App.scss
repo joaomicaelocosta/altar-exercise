@@ -1,0 +1,19 @@
+@import "../variables";
+
+.App {
+  padding:5rem 10rem;
+  &-payment {
+    padding: 0rem 10rem 5rem 10rem;
+  }
+}
+.nav {
+  text-align: center;
+  margin-top: 2rem;
+  color: $primary-color;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,86 @@
+@import "../variables";
+
+.payment {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 3rem;
+  div {
+    position: relative;
+    span {
+      position: absolute;
+      left: 0;
+      top: -30px;
+      text-transform: uppercase;
+      color: $primary-color;
+      font-weight: bold;
+    }
+    input {
+      padding: 1rem;
+      border-radius: 4px;
+      border: 2px $secondary-color solid;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  &-list {
+    margin-top: 2rem;
+    .title {
+      color: $primary-color;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    &-table {
+      width: 100%;
+      .table-head {
+        display: grid;
+        grid-template-columns: 1fr 100px 100px 100px;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        .tn {
+          text-align: left;
+          border: none;
+        }
+        div {
+          text-align: center;
+          padding: 1rem;
+          border-left: 1px solid $primary-color;
+        }
+      }
+      .table-body {
+        .row {
+          display: grid;
+          grid-template-columns: 1fr 100px 100px 100px;
+          border: 1px solid $primary-color;
+          border-top: none;
+          .tn {
+            text-align: left;
+            border: none;
+          }
+          div {
+            text-align: center;
+            padding: 1rem;
+            border-left: 1px solid $primary-color;
+          }
+        }
+        .modal-button {
+          text-decoration: underline;
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}
