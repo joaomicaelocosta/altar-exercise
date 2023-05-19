@@ -1,0 +1,80 @@
+@import "../variables";
+
+.grid {
+  &-input {
+    display: flex;
+    justify-content: space-between;
+    
+    div {
+      position: relative;
+      span {
+        position: absolute;
+        left: 0;
+        top: -30px;
+        text-transform: uppercase;
+        color: $primary-color;
+        font-weight: bold;
+      }
+      input {
+        padding: 1rem;
+        border-radius: 4px;
+        border: 2px $secondary-color solid;
+      }
+    }
+    button {
+      cursor: pointer;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      background-color: $primary-color;
+      color: $white;
+      border: none;
+      height: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+  &-table {
+    margin-top: 5rem;
+    &-row {
+      border-top: 1px solid $secondary-color;
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        border-bottom: 1px solid $secondary-color;
+      }
+      span {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px solid $secondary-color;
+        &:last-child {
+          border-right: 1px solid $secondary-color;
+        }
+      }
+    }
+  }
+  &-code {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    width: 250px;
+    gap: 1rem;
+    text-align: center;
+    &-info {
+      padding: 1rem 2rem;
+      border: 1px solid $secondary-color;
+    }
+    &-live {
+      &::before {
+        content: '•';
+        color: red;
+        margin-right: 5px;
+      }
+    }
+  }
+}

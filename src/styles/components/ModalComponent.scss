@@ -1,0 +1,40 @@
+@import "../variables";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $grey-transp;
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    padding: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px $grey-transp;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+  }
+}

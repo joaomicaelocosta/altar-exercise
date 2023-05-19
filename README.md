@@ -2,6 +2,16 @@
 
 This project is using React
 
+## Possible Improvments
+
+- Create more components for more modularity and less code repetition (ex. inputs, buttons)
+- Seperate components in molecules and atoms
+- Seperate interfaces from the components for better organization
+- Create backend server and database (currently no backend and using localstorage)
+- Improve responsiveness
+- Improve UI
+- Implement Redux for better scalability, currently using Context API for it's simplicity
+- Create packaging instructions and deployment templates
 
 ## Available Scripts
 
